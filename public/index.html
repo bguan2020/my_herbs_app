@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/public/bootstrap.min.css" />
+    <title>myHerbs | Home</title>
+    <style>
+      body {
+        padding-top: 50px;
+        background-color: #99ffcc;
+      }
+
+      .box {
+        background-color: #ffffff;
+        width: 80%;
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 10px solid #000000;
+      }
+
+      a:link,
+      a:visited {
+        background-color: #a64dff;
+        color: black;
+        border-radius: 8px;
+        padding: 10px 30px 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      a:hover {
+        background-color: #400080;
+        color: white;
+      }
+
+      a:active {
+        background-color: #400080;
+        color: white;
+      }
+
+      .responsive-font-size {
+        font-size: 1em;
+      }
+
+      @media screen and (min-width: 768px) {
+        .responsive-font-size {
+          font-size: 1.15em;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        .responsive-font-size {
+          font-size: 1.3em;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        .responsive-font-size {
+          font-size: 1.5em;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="padding: 0 3em;">
+      <div
+        class="container-fluid responsive-font-size"
+        style="background-color: white;padding: 1em;"
+      >
+        <img
+          src="/public/logo.png"
+          alt="myHerbs logo"
+          style="width:400px;height:200px"
+        />
+      </div>
+    </div>
+    <div class="container" style="padding-top: 20px;">
+      <div class="jumbotron box">
+        <h1>
+          Welcome to myHerbs! Answer the questions to determine your perfect
+          strain.
+        </h1>
+        <br /><br />
+        <a
+          href="mainV1.1.html"
+          class="responsive-font-size"
+          style="width: 100%;"
+        >
+          Start </a
+        ><br /><br />
+        <a href="about.html" class="responsive-font-size" style="width: 100%;">
+          About
+        </a>
+        <br />
+      </div>
+    </div>
+    <!-- Latest compiled and minified JS -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBMja7gv1BXptakbpH8u0HOwWw0UDq6FNQ",
+        authDomain: "my-herbs-app.firebaseapp.com",
+        databaseURL: "https://my-herbs-app.firebaseio.com",
+        projectId: "my-herbs-app",
+        storageBucket: "my-herbs-app.appspot.com",
+        messagingSenderId: "1044691998137"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="/public/jquery-3.3.1.min.js"></script>
+  </body>
+</html>
